@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+
+.dogs__container{
+    display: grid;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    
+}
+
+.title__name{
+    justify-content: center;
+}
+.title__container{
+    padding-bottom: 25px;
+}
+
+.dog__card{
+    background-color: #fff;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.dog__card__img{
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+}
+
+.name__container{
+    align-self: center;
+    padding-bottom: 15px;
+}
+
+
+
+@media (max-width: $screen-md) {
+    .dogs__container{
+        padding: 0px 25px 0px 25px;
+    }
+  }
+  
+  @media (min-width: $screen-md) {
+    .name__container{
+        margin-top: 10px;
+    }
+    
+  }
